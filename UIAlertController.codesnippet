@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let alertController = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .actionSheet)
+        let titleFont = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .bold)]
+        let messageFont = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .bold)]
+        
+        let titleAttrString = NSMutableAttributedString(string: "Title", attributes: titleFont)
+        let messageAttrString = NSMutableAttributedString(string: "Message", attributes: messageFont)
+
+        alertController.setValue(titleAttrString, forKey: "attributedTitle")
+        alertController.setValue(messageAttrString, forKey: "attributedMessage")
+
+        alertController.addAction(UIAlertAction(title: "Title", style: .default, handler: { _ -&gt; Void in
+            print("Button Called")
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AE42A3A0-D101-4E73-8ECE-A6444461857A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIAlertController</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
